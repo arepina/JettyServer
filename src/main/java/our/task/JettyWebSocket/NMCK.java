@@ -27,8 +27,6 @@ class NMCK {
     //private final static MyStem mystemAnalyzer = new Factory("-igd --eng-gr --format json --weight").newMyStem("3.0", Option.<File>empty()).get();
 
     void run(List<String> requestList, HttpServletResponse response) throws MyStemApplicationException, IOException, SQLException, ClassNotFoundException {
-        loadData();
-        System.out.println("Loaded data");
         //Product pdfdffd = db.getProduct("120848642");
         //serialize();
         //matrix = null;
@@ -44,8 +42,7 @@ class NMCK {
         requestVector[4] = 1;
         List<Product> result = workWithDTM(requestProduct, requestVector);
         for (Product p : result) {
-            System.out.println(p.toString());
-            response.getWriter().println("<h3>" + p.toString() + "</h3>");
+            response.getWriter().println("<h4>" + p.toString() + "</h4>");
         }
         long finish = System.currentTimeMillis();
         long timeConsumedMillis = finish - start;
@@ -84,7 +81,7 @@ class NMCK {
         }
     }
 
-    private static void loadData() {
+    static void loadData() {
         features = ReadFile.readHeaders("./src/main/java/our/task/JettyWebSocket/data/features.csv");
         indexes = ReadFile.readHeaders("./src/main/java/our/task/JettyWebSocket/data/docs.csv");
         matrix = ReadFile.formMatrix("./src/main/java/our/task/JettyWebSocket/data/dfm_new.csv", features);
