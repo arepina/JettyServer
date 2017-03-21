@@ -48,7 +48,7 @@ class FilterData {
             for (Map.Entry<String, BitSet> entry : matrix.entrySet()) {
                 String str = entry.getValue().toString().replace("{", "").replace("}", "").replace(" ", "");
                 List<String> nonZeroIndexes = Arrays.asList(str.split(","));
-                if(nonZeroIndexes.contains(String.valueOf(NMCK.MAX - 3 * row)))
+                if(nonZeroIndexes.contains(String.valueOf(row)))
                     rowVector[count] = 1;
                 else
                     rowVector[count] = 0;

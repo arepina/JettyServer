@@ -45,20 +45,13 @@ class ReadFile {
         Map<String, BitSet> matrix = new LinkedHashMap<>();
         for (Map.Entry<String, ArrayList<Byte>> entry : matrix_prepare.entrySet()) {
             Byte[] byte_arr = entry.getValue().toArray(new Byte[entry.getValue().size()]);
-            String str = Arrays.toString(byte_arr);
-            BitSet bitSet = createFromString(str);
+            BitSet bitSet = new BitSet();
+            for (int i = 0; i < byte_arr.length; i++)
+               if (byte_arr[i] == 1)
+                   bitSet.set(i);
             matrix.put(entry.getKey(), bitSet);
         }
         return matrix;
-    }
-
-    private static BitSet createFromString(String s) {
-        BitSet t = new BitSet(s.length());
-        for (int i = s.length() - 1; i >= 0; i--) {
-            if (s.charAt(i) == '1')
-                t.set(s.length() - 1 - i);
-        }
-        return t;
     }
 
     static ArrayList<String> readHeaders(String csvFile) {

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b7b8237-3d6c-4efd-8bec-70e66d8b26b8" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/docs/Договор о практике (шаблон) 2017.doc" afterPath="$PROJECT_DIR$/docs/Договор о практике (шаблон) 2017.doc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/FilterData.java" afterPath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/FilterData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/JettyStarter.java" afterPath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/JettyStarter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/NMCK.java" afterPath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/NMCK.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/ReadFile.java" afterPath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/ReadFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RowsFinder.java" afterPath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RowsFinder.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RunProgram.java" afterPath="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RunProgram.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,21 +28,29 @@
       <file leaf-file-name="JettyStarter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/JettyStarter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+            <state relative-caret-position="45">
+              <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RunProgram.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ReadFile.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/ReadFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="61" column="45" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RunProgram.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RunProgram.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-435">
+              <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -45,8 +58,8 @@
       <file leaf-file-name="NMCK.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/NMCK.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+            <state relative-caret-position="285">
+              <caret line="82" column="101" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="101" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#deserialize#0;class#NMCK#0" expanded="false" />
@@ -56,10 +69,22 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="RowsFinder.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RowsFinder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DB.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/DB.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="-270">
               <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
               <folding>
                 <marker date="1489949061000" expanded="true" signature="616:658" ph="SELECT * FRO... Products" />
@@ -88,19 +113,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/JettyStarter.java" />
         <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/HelloWorld.java" />
-        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/FilterData.java" />
         <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/Product.java" />
-        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RowsFinder.java" />
         <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/Serialization.java" />
         <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/NMZK.java" />
-        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/ReadFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/DB.java" />
-        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/NMCK.java" />
         <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RunProgram.java" />
+        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/JettyStarter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/ReadFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/NMCK.java" />
+        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RowsFinder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/FilterData.java" />
       </list>
     </option>
   </component>
@@ -118,9 +143,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="797" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -159,7 +183,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -200,8 +226,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -209,6 +233,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="js.eslint.eslintPackage" value="" />
+    <property name="FullScreen" value="true" />
   </component>
   <component name="RunManager" selected="Application.JettyStarter">
     <configuration default="false" name="JettyStarter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -633,21 +658,22 @@
       <workItem from="1489946297118" duration="802000" />
       <workItem from="1489947369050" duration="2768000" />
       <workItem from="1490011815907" duration="2175000" />
-      <workItem from="1490026405639" duration="2321000" />
+      <workItem from="1490026405639" duration="2436000" />
+      <workItem from="1490080118790" duration="4146000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8066000" />
+    <option name="totallyTimeSpent" value="12327000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32968536" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -666,7 +692,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3997253" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34114888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -683,7 +709,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="45" />
+      <option name="time" value="57" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -692,6 +718,8 @@
         <watch expression="stringList.get(i).substring(stringList.get(i).indexOf(&quot;=&quot;), stringList.get(i).length()" />
         <watch expression="baseRequest.getParameter(&quot;productName&quot;)" language="JAVA" />
         <watch expression="baseRequest.getParameter(&quot;measure&quot;)" language="JAVA" />
+        <watch expression="bitSet.toByteArray()" language="JAVA" />
+        <watch expression="bitSet.toString()" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
@@ -700,6 +728,44 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/JettyStarter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RunProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/NMCK.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#deserialize#0;class#NMCK#0" expanded="false" />
+            <element signature="method#serialize#0;class#NMCK#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/DB.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
+          <folding>
+            <marker date="1489949061000" expanded="true" signature="616:658" ph="SELECT * FRO... Products" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/JettyStarter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -712,9 +778,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="27" lean-forward="false" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -730,9 +794,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -778,16 +840,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RowsFinder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="12" lean-forward="false" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -809,14 +861,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="705">
           <caret line="47" column="27" lean-forward="false" selection-start-line="47" selection-start-column="27" selection-end-line="47" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/FilterData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="9" lean-forward="false" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
           <folding />
         </state>
       </provider>
@@ -844,17 +888,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/ReadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/DB.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="-270">
           <caret line="10" column="44" lean-forward="false" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
           <folding>
             <marker date="1489949061000" expanded="true" signature="616:658" ph="SELECT * FRO... Products" />
@@ -862,18 +898,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RunProgram.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-435">
+          <caret line="9" column="27" lean-forward="false" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/JettyStarter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="13" column="1" lean-forward="false" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+        <state relative-caret-position="45">
+          <caret line="3" column="35" lean-forward="false" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/FilterData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="56" column="0" lean-forward="false" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RowsFinder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/NMCK.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="34" column="57" lean-forward="true" selection-start-line="34" selection-start-column="57" selection-end-line="34" selection-end-column="57" />
+        <state relative-caret-position="285">
+          <caret line="82" column="101" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="82" selection-end-column="101" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#deserialize#0;class#NMCK#0" expanded="false" />
@@ -882,13 +944,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/RunProgram.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/our/task/JettyWebSocket/ReadFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="561">
+          <caret line="61" column="45" lean-forward="false" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -17,7 +17,6 @@ import java.util.*;
 
 class NMCK {
 
-    final static int MAX = 298;
     private static ArrayList<String> indexes;
     private static ArrayList<String> features;
     static DB db;
@@ -27,7 +26,6 @@ class NMCK {
     //private final static MyStem mystemAnalyzer = new Factory("-igd --eng-gr --format json --weight").newMyStem("3.0", Option.<File>empty()).get();
 
     void run(List<String> requestList, HttpServletResponse response) throws MyStemApplicationException, IOException, SQLException, ClassNotFoundException {
-        //Product pdfdffd = db.getProduct("120848642");
         //serialize();
         //matrix = null;
         //deserialize();
@@ -58,11 +56,8 @@ class NMCK {
             matrix = ser.matrix;
             in.close();
             fileIn.close();
-        }catch(IOException i) {
+        }catch(IOException | ClassNotFoundException i) {
             i.printStackTrace();
-        }catch(ClassNotFoundException c) {
-            System.out.println("Employee class not found");
-            c.printStackTrace();
         }
     }
 

@@ -2,17 +2,17 @@ package our.task.JettyWebSocket;
 
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 class RowsFinder {
 
     static ArrayList<Integer> findFirstRows(String word, Map<String, BitSet> matrix) {
         if (matrix.get(word) != null) {
-            BitSet bitSet = matrix.get(word);
-            ArrayList<Integer> nonzero = new ArrayList<>();
-            for (int i = bitSet.nextSetBit(0); i != -1; i = bitSet.nextSetBit(i + 1)) {
-                nonzero.add((NMCK.MAX - i) / 3);
-            }
-            return nonzero;
+            String bitSet = matrix.get(word).toString().replace("{", "").replace("}", "");
+            bitSet = bitSet.replaceAll("\\s","");
+            List<String> nonzeroString = Arrays.asList(bitSet.split(","));
+            List<Integer> nonzeroInteger = nonzeroString.stream().map(Integer::valueOf).collect(Collectors.toList());
+            return new ArrayList<>(nonzeroInteger);
         } else
             throw new IllegalArgumentException("Unknown word");
     }
