@@ -19,7 +19,7 @@ class NMCK {
     private static ArrayList<String> indexes;
     private static ArrayList<String> features;
     static DB db;
-    private static Map<String, BitSet> matrix;
+    //private static Map<String, BitSet> matrix;
     private static Map<String, String> new_matrix;
     private static Info firstNoun;
     //TODO UNCOMMENT
@@ -31,7 +31,7 @@ class NMCK {
         //TODO UNCOMMENT
         //ArrayList<String> lemmatizedArray = processRequest(requestProduct);
         //TODO form a vector using lemmatizedArray, step 4
-        Integer[] requestVector = new Integer[517888];
+        Integer[] requestVector = new Integer[new_matrix.entrySet().size()];
         Arrays.fill(requestVector, 0);
         requestVector[3] = 1;
         requestVector[4] = 1;
@@ -61,12 +61,16 @@ class NMCK {
     }
 
     static void loadData() {
+        long start = System.currentTimeMillis();
         new_matrix = deserialize();
         features = ReadFile.readHeaders("./src/main/java/our/task/JettyWebSocket/data/features.csv");
         indexes = ReadFile.readHeaders("./src/main/java/our/task/JettyWebSocket/data/docs.csv");
-        matrix = ReadFile.formMatrix("./src/main/java/our/task/JettyWebSocket/data/dfm_new.csv", features);
+        //matrix = ReadFile.formMatrix("./src/main/java/our/task/JettyWebSocket/data/dfm_new.csv", features);
         db = new DB();
         db.connectDb();
+        long finish = System.currentTimeMillis();
+        long timeConsumedMillis = finish - start;
+        System.out.println((double)(timeConsumedMillis) + " ms");
     }
 
     private static ArrayList<String> processRequest(Product product) throws MyStemApplicationException {
@@ -99,13 +103,13 @@ class NMCK {
     }
 
     private static List<Product> workWithDTM(Product product, Integer[] requestVector) {
-        ArrayList<Integer> nonZeroRows = RowsFinder.findNonZeroRows(product.productName, matrix);
+        ArrayList<Integer> nonZeroRows = RowsFinder.findNonZeroRows(product.productName, new_matrix);
         List<Product> products = new ArrayList<>();
         if (nonZeroRows.size() == 0) // we don't have a row or more with all the words
         {
             try {
-                ArrayList<Integer> nonZeroFirstNounRows = RowsFinder.findFirstRows(firstNoun.toString(), matrix);
-                products = FilterData.filterByCos(nonZeroFirstNounRows, matrix, 0.7, requestVector, indexes);
+                ArrayList<Integer> nonZeroFirstNounRows = RowsFinder.findFirstRows(firstNoun.toString(), new_matrix);
+                products = FilterData.filterByCos(nonZeroFirstNounRows, new_matrix, 0.7, requestVector, indexes);
             } catch (NullPointerException e) {
                 System.err.println("Didn't find the first noun in request");
                 Collections.sort(features);
@@ -116,15 +120,15 @@ class NMCK {
                         break;
                     }
                 }
-                ArrayList<Integer> nonZeroFirstTermRows = RowsFinder.findFirstRows(firstTerm, matrix);
+                ArrayList<Integer> nonZeroFirstTermRows = RowsFinder.findFirstRows(firstTerm, new_matrix);
                 if (nonZeroFirstTermRows.size() == 0)
                     return products;
                 else
-                    products = FilterData.filterByCos(nonZeroFirstTermRows, matrix, 0.7, requestVector, indexes);
+                    products = FilterData.filterByCos(nonZeroFirstTermRows, new_matrix, 0.7, requestVector, indexes);
             }
 
         } else
-            products = FilterData.filterByCos(nonZeroRows, matrix, 0.5, requestVector, indexes);
+            products = FilterData.filterByCos(nonZeroRows, new_matrix, 0.5, requestVector, indexes);
         return FilterData.processFilters(products, product);
     }
 

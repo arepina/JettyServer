@@ -6,9 +6,9 @@ import java.util.stream.Collectors;
 
 class RowsFinder {
 
-    static ArrayList<Integer> findFirstRows(String word, Map<String, BitSet> matrix) {
+    static ArrayList<Integer> findFirstRows(String word, Map<String, String> matrix) {
         if (matrix.get(word) != null) {
-            String bitSet = matrix.get(word).toString().replace("{", "").replace("}", "");
+            String bitSet = matrix.get(word).replace("{", "").replace("}", "");
             bitSet = bitSet.replaceAll("\\s","");
             List<String> nonzeroString = Arrays.asList(bitSet.split(","));
             List<Integer> nonzeroInteger = nonzeroString.stream().map(Integer::valueOf).collect(Collectors.toList());
@@ -17,7 +17,7 @@ class RowsFinder {
             throw new IllegalArgumentException("Unknown word");
     }
 
-    static ArrayList<Integer> findNonZeroRows(String str, Map<String, BitSet> matrix) {
+    static ArrayList<Integer> findNonZeroRows(String str, Map<String, String> matrix) {
         String[] words = str.split(" ");
         Map<String, ArrayList<Integer>> nonZero = new HashMap<>();
         for (String word : words) // get the nonzero rows for each word
@@ -42,14 +42,4 @@ class RowsFinder {
         return resultRows;
     }
 
-    private static ArrayList<Integer> countBits(int x) {
-        ArrayList<Integer> rows = new ArrayList<>();
-        String binaryStr = Integer.toBinaryString(x);
-        int length = binaryStr.length();
-        for (int i = 0; i < length; i++) {
-            if (binaryStr.charAt(i) == '1')
-                rows.add(i);
-        }
-        return rows;
-    }
 }

@@ -39,14 +39,14 @@ class FilterData {
         }
     }
 
-    static List<Product> filterByCos(ArrayList<Integer> nonZeroRows, Map<String, BitSet> matrix, double y, Integer[] requestVector, ArrayList<String> indexes) {
+    static List<Product> filterByCos(ArrayList<Integer> nonZeroRows, Map<String, String> matrix, double y, Integer[] requestVector, ArrayList<String> indexes) {
         List<Pair<Integer, Double>> cosineValues = new ArrayList<>();
         List<String> productID = new ArrayList<>();
         for (Integer row : nonZeroRows) { // get the rows vectors
             Integer[] rowVector = new Integer[matrix.entrySet().size()];
             int count = 0;
-            for (Map.Entry<String, BitSet> entry : matrix.entrySet()) {
-                String str = entry.getValue().toString().replace("{", "").replace("}", "").replace(" ", "");
+            for (Map.Entry<String, String> entry : matrix.entrySet()) {
+                String str = entry.getValue().replace("{", "").replace("}", "").replace(" ", "");
                 List<String> nonZeroIndexes = Arrays.asList(str.split(","));
                 if(nonZeroIndexes.contains(String.valueOf(row)))
                     rowVector[count] = 1;
