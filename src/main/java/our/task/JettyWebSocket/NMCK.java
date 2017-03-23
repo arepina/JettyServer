@@ -16,25 +16,22 @@ import java.util.*;
 
 
 class NMCK {
-
     private static ArrayList<String> indexes;
     private static ArrayList<String> features;
     static DB db;
     private static Map<String, BitSet> matrix;
+    private static Map<String, String> new_matrix;
     private static Info firstNoun;
     //TODO UNCOMMENT
     //private final static MyStem mystemAnalyzer = new Factory("-igd --eng-gr --format json --weight").newMyStem("3.0", Option.<File>empty()).get();
 
     void run(List<String> requestList, HttpServletResponse response) throws MyStemApplicationException, IOException, SQLException, ClassNotFoundException {
-        //serialize();
-        //matrix = null;
-        //deserialize();
         long start = System.currentTimeMillis();
         Product requestProduct = new Product("", requestList.get(2), requestList.get(0), requestList.get(3), (double) 0, 0, requestList.get(1), "", "");
         //TODO UNCOMMENT
         //ArrayList<String> lemmatizedArray = processRequest(requestProduct);
         //TODO form a vector using lemmatizedArray, step 4
-        Integer[] requestVector = new Integer[matrix.size()];
+        Integer[] requestVector = new Integer[517888];
         Arrays.fill(requestVector, 0);
         requestVector[3] = 1;
         requestVector[4] = 1;
@@ -47,36 +44,24 @@ class NMCK {
         System.out.println((double)(timeConsumedMillis) + " ms");
     }
 
-    private static void deserialize() {
+    private static Map<String, String>  deserialize() {
         Serialization ser;
+        Map<String, String> new_matrix = null;
         try {
-            FileInputStream fileIn = new FileInputStream("/tmp/serialized_matrix.ser");
+            FileInputStream fileIn = new FileInputStream("./src/main/java/our/task/JettyWebSocket/data/serialized_matrix.ser");
             ObjectInputStream in = new ObjectInputStream(fileIn);
             ser = (Serialization) in.readObject();
-            matrix = ser.matrix;
+            new_matrix = ser.matrix;
             in.close();
             fileIn.close();
         }catch(IOException | ClassNotFoundException i) {
             i.printStackTrace();
         }
-    }
-
-    private static void serialize() {
-        Serialization ser = new Serialization();
-        ser.matrix = matrix;
-        try {
-            FileOutputStream fileOut = new FileOutputStream("/tmp/serialized_matrix.ser");
-            ObjectOutputStream out = new ObjectOutputStream(fileOut);
-            out.writeObject(ser);
-            out.close();
-            fileOut.close();
-            System.out.printf("Serialized data is saved in /tmp/serialized_matrix.ser");
-        }catch(IOException i) {
-            i.printStackTrace();
-        }
+        return new_matrix;
     }
 
     static void loadData() {
+        new_matrix = deserialize();
         features = ReadFile.readHeaders("./src/main/java/our/task/JettyWebSocket/data/features.csv");
         indexes = ReadFile.readHeaders("./src/main/java/our/task/JettyWebSocket/data/docs.csv");
         matrix = ReadFile.formMatrix("./src/main/java/our/task/JettyWebSocket/data/dfm_new.csv", features);
