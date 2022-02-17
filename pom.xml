@@ -19,7 +19,7 @@
     <dependency> 
         <groupId>org.eclipse.jetty</groupId>
         <artifactId>jetty-server</artifactId>
-        <version>9.1.3.v20140225</version>
+        <version>9.4.41.v20210516</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
@@ -30,7 +30,7 @@
     <dependency>
         <groupId>ru.stachek66.nlp</groupId>
         <artifactId>mystem-scala</artifactId>
-        <version>0.1.4</version>
+        <version>0.1.5</version>
     </dependency>
   </dependencies>
   <build>
